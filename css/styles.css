@@ -1,7 +1,39 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/play-v19-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/play-v19-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v32-latin-regular.woff2') format('woff2');
+}
+
+font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/roboto-v32-latin-500.woff2') format('woff2');
+}
+
 :root {
-  --color-primary-3: #011c44;
-  --color-primary-2: #2b7fff;
   --color-primary-1: #ffff;
+  --color-primary-2: #2b7fff;
+  --color-primary-3: #011c44;
   --color-secondary-1: #4a4a4a;
   --color-secondary-2: #747272;
   --color-secondary-3: #011f4a;
@@ -41,7 +73,7 @@ ul {
   color: var(--color-brand-light);
 }
 /*advantages*/
-.advantages-list { 
+.advantages-list {
   color: var(--color-primary-light);
   background-color: var(--color-brand-light);
 }
