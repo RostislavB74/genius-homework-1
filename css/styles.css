@@ -110,6 +110,7 @@ ul {
 /*footer*/
 .footer {
   color: var(--color-primary-1);
+  background-color: var(--color-primary-3);
   font-style: normal;
 }
 .address-link {
