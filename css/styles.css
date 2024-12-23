@@ -144,7 +144,9 @@ margin: 0;
   gap: 32px;
 }
 /* hero section*/
-
+.hero-section {
+  margin-bottom: 140px;
+}
 .hero-section-logo{
   /* background-color: rgb(161, 167, 167); */
   width: 530px;
@@ -169,13 +171,18 @@ margin: 0;
 }
 /* about us section*/
 .about-us {
-  /* display: flex; */
-  width: 100%;
-  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  width: 1240px;
   height: 700px;
   font-size: 22px;
   line-height: 1.7;
   text-align: left;
+  gap: 32px;
+}
+.about-us-section{
+  width: 709px;
+  height: 456px;
 }
 .advantages {
   text-align: center;
