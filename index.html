@@ -8,42 +8,62 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <img src="./images/logo.svg" alt="Логотип Beauty Zone" />
-        <ul>
-          <li><a class="link" href="#about-section">Про нас</a></li>
-          <li><a class="link" href="#why-section">Чому ми</a></li>
-          <li><a class="link" href="#procedure-section">Наші процедури</a></li>
-          <li><a class="link" href="#contacts-section">Контакти</a></li>
-          <li>
-            <a href="#"> <!--Call--> </a>
-          </li>
-          <li>
-            <a href="#"> <!--Facebook--> </a>
-          </li>
-          <li>
-            <a href="#"><!--Instagram--> </a>
-          </li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="container">
+        <div class="header-container">
+          <nav class="header-nav">
+            <img src="./images/logo.svg" alt="Логотип Beauty Zone" />
+            <ul class="header-nav-list">
+              <li><a class="link" href="#about-section">Про нас</a></li>
+              <li><a class="link" href="#advantages-section">Чому ми</a></li>
+              <li>
+                <a class="link" href="#procedure-section">Наші процедури</a>
+              </li>
+              <li><a class="link" href="#contacts-section">Контакти</a></li>
+            </ul>
+            <ul class="header-nav-icon">
+              <li>
+                <a href="#">
+                  <img src="./images/telephone.svg" alt="Подзвонити"
+                /></a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/uit_facebook-f.svg" alt="Подзвонити"
+                /></a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="./images/ph_instagram-logo-light.svg"
+                    alt="Подзвонити"
+                /></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
     <main>
       <section class="hero-section">
-        <h1 class="hero-title">Beauty zone</h1>
-        <p>Косметологічна клініка</p>
-        <div class="hero-communication">
-          <button class="button" type="button">Замовити дзвінок</button>
-          <p class="underbutton-text">
-            Запишись та отримай безкоштовну консультацію нашого косметолога
-          </p>
+        <div class="hero-container">
+          <div class="hero-section-logo">
+            <p>Косметологічна клініка</p>
+            <h1 class="hero-title">Beauty zone</h1>
+          </div>
+          <div class="hero-communication">
+            <button class="button" type="button">Замовити дзвінок</button>
+            <p class="underbutton-text">
+              Запишись та отримай безкоштовну консультацію нашого косметолога
+            </p>
+          </div>
         </div>
-        <img
+        <!-- <img
           src="./images/face_massage.jpg"
           alt="Лікар в масці робить процедуру "
-        />
+        /> -->
       </section>
-      <section class="about-us">
+      <section class="about-us" id="about-section">
         <h2 class="section-title">
           Перевтілюйтесь в <span class="accent">Beauty Zone!</span>
         </h2>
@@ -66,7 +86,7 @@
           alt="Жінка після косметологічної процедури на обличчі"
         />
       </section>
-      <section class="advantages">
+      <section class="advantages" id="advantages-section">
         <h2 class="section-title">
           Чому люди <span class="accent">обирають нас</span>
         </h2>
@@ -81,7 +101,7 @@
           </li>
           <li>
             <article>
-              <h3 class="visually-hidden" >Наше обладнання</h3>
+              <h3 class="visually-hidden">Наше обладнання</h3>
               <img src="#" alt="Медична посуда" />
 
               <p>
@@ -92,7 +112,7 @@
           </li>
           <li>
             <article>
-              <h3 class="visually-hidden">  Наша мета</h3>
+              <h3 class="visually-hidden">Наша мета</h3>
               <img src="#" alt="Медична посуда" />
               <p>
                 Наша мета - підкреслити переваги та приховати недоліки, а не
@@ -102,7 +122,7 @@
           </li>
         </ul>
       </section>
-      <section class="our-procedure">
+      <section class="our-procedure" id="procedure-section">
         <h2 class="section-title">
           Наші <span class="accent">процедури</span>
         </h2>
@@ -127,7 +147,7 @@
           </li>
         </ul>
       </section>
-      <section class="Contacts">
+      <section class="Contacts" id="contacts-section">
         <h2 class="section-title">Як нас <span class="accent">знайти</span></h2>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1268.7364744734723!2d30.7739413!3d50.5067663!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0YPQuy4g0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60L4sIDUsINCR0YDQvtCy0LDRgNGLLCDQmtC40LXQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAwNzQwMA!5e0!3m2!1sru!2sua!4v1734504641957!5m2!1sru!2sua"
@@ -144,13 +164,13 @@
     <footer class="footer">
       <nav>
         <a href="#">
-          <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
+          <img src="./images/logo.svg" alt="Логотип Beauty Zone" />
         </a>
         <ul>
-          <li><a class="address-link" href="#">Про нас</a></li>
-          <li><a class="address-link" href="#">Чому ми</a></li>
-          <li><a class="address-link" href="#">Наші процедури</a></li>
-          <li><a class="address-link" href="#">Контакти</a></li>
+          <li><a class="link" href="#about-section">Про нас</a></li>
+          <li><a class="link" href="#advantages-section">Чому ми</a></li>
+          <li><a class="link" href="#procedure-section">Наші процедури</a></li>
+          <li><a class="link" href="#contacts-section">Контакти</a></li>
         </ul>
       </nav>
       <address class="address">
