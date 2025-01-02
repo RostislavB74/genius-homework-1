@@ -43,6 +43,10 @@
 * {
   box-sizing: border-box;
 }
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body {
   color: var(--color-primary-3);
   font-family: Roboto, sans-serif;
@@ -66,6 +70,9 @@ h4,
 h5,
 h6 {
   margin-top: 0px;
+}
+p {
+  margin: 0;
 }
 .container {
   width: 100%;
@@ -110,6 +117,8 @@ ul {
 
 .link {
   color: var(--color-primary-3);
+  text-decoration: none;
+
 }
 .link:hover {
   font-weight: 700;
@@ -121,9 +130,8 @@ ul {
   max-width: 1440px;
   display: flex;
   justify-content: center;
-  background-color: lightgray;
+  /* background-color: lightgray; */
   margin-bottom: 16px;
-  
 }
 .header-container {
   display: flex;
@@ -148,10 +156,9 @@ ul {
 }
 /* hero section*/
 .hero-section {
-  background-color: lightblue;
+  /* background-color: lightblue; */
   margin-top: 0;
   margin-bottom: 176px;
-  
 }
 .hero-section-logo {
   /* background-color: rgb(161, 167, 167); */
@@ -177,12 +184,13 @@ ul {
 /* about us section*/
 .about-us {
   max-width: 1240px;
-  background-color: lightgray;
+  /* background-color: lightgray; */
   display: flex;
   font-size: 22px;
   line-height: 1.7;
   gap: 32px;
   align-items: center;
+  margin-bottom: 176px;
 }
 
 .accent-text {
@@ -196,25 +204,15 @@ ul {
   margin-right: 0;
 }
 
-.about-us-picture {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  position: relative;
-
-  margin: 0;
-  padding: 0;
-}
-
 .gallery {
   width: 327px;
   height: 327px;
 }
 
 .about-us-picture {
-  display: flex;
-  flex-direction: column;
-
+  margin: 0;
+  padding: 0;
+  /* gap: 40px; */
   position: relative;
   width: 499px;
   height: 695px;
@@ -231,9 +229,7 @@ ul {
   bottom: 0;
   right: 0;
 }
-p {
-  margin: 0;
-}
+
 .limited {
   max-width: 638px;
 }
@@ -244,19 +240,144 @@ p {
   height: 377px;
   text-align: center;
   line-height: 1.3;
-  gap: 48px;
+  /* gap: 96px; */
+}
+.advantages-title {
+  width: 100%;
+  text-align: center;
+  max-width: 532px;
+  margin-top: 48px;
+}
+.advantages-list {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+.advantages-item {
+  background-color: var(--color-primary-1);
+  border-radius: 32px;
+}
+.carousel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border-radius: 50%;
+  fill: var(--color-primary-dark);
+  background-color: transparent;
+  border: 1px solid var(--color-primary-3);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.carousel-button:hover {
+  background-color: var(--color-primary-2);
+  fill: var(--color-primary-1);
+  border: none;
 }
 
+.procedure-section {
+  width: 100%;
+  max-width: 1216px;
+  /* height: 377px; */
+  text-align: center;
+  line-height: 1.3;
+  margin-bottom: 96px;
+}
+.our-procedure-list {
+  display: flex;
+  gap: 16px;
+}
+.procedure-container {
+  display: flex;
+  gap: 32px;
+}
+
+/*contacts*/
+.contacts-container {
+  display: flex;
+  gap: 32px;
+}
+.contacts-section {
+  padding-bottom: 96px;
+  gap: 32px;
+}
+.contact-title {
+  margin-bottom: 16px;
+}
+
+.contacts-map {
+  flex-shrink: 0;
+  border: none;
+  border-radius: 32px;
+}
+.forma{
+  width: 423px;
+  height: 481px;
+  background-color: var(--color-secondary-3);
+  margin: 0;
+  border-radius: 32px;
+
+}
+.forma-title{
+  color: var(--color-primary-1);
+}
+.confidence{
+  width: 100%;
+  max-width: 213px;
+  font-size: 12px;
+  text-align: center;
+  color: var(--color-secondary-2);
+}
 /*footer*/
 .footer {
-  color: var(--color-primary-1);
+  width: 100%;
+  max-width: 1440px;
   background-color: var(--color-primary-3);
-  font-style: normal;
+  /* font-style: normal; */
+  padding: 56px;
 }
+.footer-container {
+  display: flex;
+  justify-content: center;
+  /* flex-grow: 1; */
+  color: var(--color-primary-1);
+  
+}
+.footer-nav,
+.footer-address {
+  display: flex;
+  flex-basis: 50%;
+  gap: 20px;
+  
+}
+.footer-logo,
+.footer-menu {
+  margin: 0;
+  flex-grow: 1;
+  
+}
+.footer-link {
+  color: var(--color-primary-1);
+  text-decoration: none;
+  margin-bottom: 16px;
+}
+.address-list,
+.address-info {
+  flex-grow: 1;
+  margin: 0;
+}
+
 .address-link {
   color: var(--color-primary-1);
   text-decoration: none;
   font-style: normal;
+  gap: 186px;
+}
+.social-section {
+  display: flex;
+  gap: 24px;
 }
 
 .address-copyright {
