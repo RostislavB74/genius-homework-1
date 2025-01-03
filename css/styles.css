@@ -159,6 +159,11 @@ ul {
   /* background-color: lightblue; */
   margin-top: 0;
   margin-bottom: 176px;
+  background-image: url('../images/face_massage.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100%;
+  
 }
 .hero-section-logo {
   /* background-color: rgb(161, 167, 167); */
@@ -181,10 +186,10 @@ ul {
   line-height: 0.8;
   text-transform: capitalize;
 }
+
 /* about us section*/
 .about-us {
   max-width: 1240px;
-  /* background-color: lightgray; */
   display: flex;
   font-size: 22px;
   line-height: 1.7;
@@ -212,7 +217,6 @@ ul {
 .about-us-picture {
   margin: 0;
   padding: 0;
-  /* gap: 40px; */
   position: relative;
   width: 499px;
   height: 695px;
@@ -222,40 +226,59 @@ ul {
   position: absolute;
   top: 0;
   left: 0;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border-radius: 50%;
+  fill: var(--color-primary-dark);
+  background-color: transparent;
+  border: 1px solid var(--color-primary-dark);
+  cursor: pointer;
+  flex-shrink: 0;
 }
-
+.picture{
+  border-radius: 50%;
+}
 .gallery.second {
   position: absolute;
   bottom: 0;
   right: 0;
+  
 }
-
 .limited {
   max-width: 638px;
 }
 /*advantages*/
-.advantages {
+.advantages-section {
   width: 100%;
   max-width: 1060px;
   height: 377px;
   text-align: center;
   line-height: 1.3;
-  /* gap: 96px; */
+  margin-bottom: 96px;
 }
 .advantages-title {
   width: 100%;
-  text-align: center;
   max-width: 532px;
-  margin-top: 48px;
+  margin-bottom: 48px;
+  /* text-align: center; */
+
+  
 }
 .advantages-list {
   display: flex;
   justify-content: center;
-  flex-grow: 1;
+  flex-wrap: wrap;
+  margin: 0;
+  gap: 56px;
 }
 .advantages-item {
+  width: 100%;
+  max-width: 316px;
+  height: 181px;
   background-color: var(--color-primary-1);
   border-radius: 32px;
+
 }
 .carousel-button {
   display: flex;
@@ -280,7 +303,6 @@ ul {
 .procedure-section {
   width: 100%;
   max-width: 1216px;
-  /* height: 377px; */
   text-align: center;
   line-height: 1.3;
   margin-bottom: 96px;
@@ -288,20 +310,26 @@ ul {
 .our-procedure-list {
   display: flex;
   gap: 16px;
+  flex-wrap: wrap;
 }
 .procedure-container {
   display: flex;
   gap: 32px;
+  align-items: center;
 }
 
 /*contacts*/
 .contacts-container {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
   gap: 32px;
 }
 .contacts-section {
   padding-bottom: 96px;
   gap: 32px;
+
 }
 .contact-title {
   margin-bottom: 16px;
@@ -317,17 +345,22 @@ ul {
   height: 481px;
   background-color: var(--color-secondary-3);
   margin: 0;
+  text-align: center;
   border-radius: 32px;
 
 }
 .forma-title{
   color: var(--color-primary-1);
+  
+  width: 274px;
+}
+.accent-forma{
+  color: var(--color-primary-2);
 }
 .confidence{
   width: 100%;
   max-width: 213px;
   font-size: 12px;
-  text-align: center;
   color: var(--color-secondary-2);
 }
 /*footer*/
